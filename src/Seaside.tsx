@@ -1,0 +1,99 @@
+import React,{useLayoutEffect} from 'react';
+import {AbsoluteFill,CanvasImage,Interactive,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
+import {COLORS as C,SANS,SERIF} from './style';
+import {camera,LOWER,mix,partial,photoBox,pointAt,progress,show,TRAVEL,UPPER,VIEW,WHY,type Cubic} from './timeline';
+import {SCRIPT} from './content';
+import './fonts';
+
+type TextProps={x:number;y:number;width:number;size:number;serif?:boolean;color?:string;opacity?:number;children:React.ReactNode;align?:'left'|'center';lineHeight?:number;id?:string};
+const Text=({x,y,width,size,serif=false,color=C.ink,opacity=1,children,align='left',lineHeight=1.5,id}:TextProps)=>(
+ <div data-qa={id} style={{position:'absolute',left:x,top:y,width,fontSize:size,fontFamily:serif?SERIF:SANS,color,opacity,textAlign:align,lineHeight,whiteSpace:'pre-line',letterSpacing:serif?'.005em':0,fontWeight:400}}>{children}</div>
+);
+const Stroke=({curve,p,color,width=4}: {curve:Cubic;p:number;color:string;width?:number})=>{
+ if(p<=0)return null;const tip=pointAt(curve,p);
+ return <><path d={partial(curve,p)} stroke={color} strokeWidth={width} fill="none" strokeLinecap="round" strokeLinejoin="round"/>{p<1&&<circle cx={tip.x} cy={tip.y} r={5.5} fill={color}/>}</>;
+};
+
+export type SeasideProps={audit?:boolean};
+const SeasideInner=({audit=false}:SeasideProps)=>{
+ const frame=useCurrentFrame();const {fps}=useVideoConfig();const t=frame/fps;
+ const photo=photoBox(t),cam=camera(t);
+ const photoIn=progress(t,0,.55);
+ const quoteFade=1-progress(t,18.35,18.85);
+ const upperOpacity=mix(1,.38,progress(t,27.1,27.6))+ .62*progress(t,37.65,38.55);
+ const upper=progress(t,21.05,22.35),upperEnd=progress(t,22.5,23.5);
+ const lower=progress(t,28.0,29.25);
+ const travel=progress(t,29.45,30.55),view=progress(t,31.2,32.3),why=progress(t,33.25,34.65);
+ useLayoutEffect(()=>{
+  if(!audit)return;
+  const stage=document.querySelector('[data-qa-stage]')!.getBoundingClientRect();
+  const visible=(el:Element)=>{let o=1;for(let e:Element|null=el;e;e=e.parentElement)o*=Number(getComputedStyle(e).opacity);return o>.98;};
+  const texts=Array.from(document.querySelectorAll('[data-qa]:not([data-qa="photo"])')).filter(visible).map(el=>{
+   const rects: {x:number;y:number;w:number;h:number}[]=[];const walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let node:Node|null;
+   while((node=walk.nextNode())){const range=document.createRange();range.selectNodeContents(node);for(const r of Array.from(range.getClientRects()))if(r.width>1&&r.height>1)rects.push({x:r.x-stage.x,y:r.y-stage.y,w:r.width,h:r.height});}
+   return {id:el.getAttribute('data-qa'),text:el.textContent,rects};
+  });
+  const violations:string[]=[];
+  for(const text of texts)for(const r of text.rects)if(r.x<153.6||r.x+r.w>2406.4||r.y<100.8||r.y+r.h>1296)violations.push(`safe:${text.id}`);
+  for(let a=0;a<texts.length;a++)for(let b=a+1;b<texts.length;b++)for(const r of texts[a].rects)for(const q of texts[b].rects)if(r.x<q.x+q.w&&r.x+r.w>q.x&&r.y<q.y+q.h&&r.y+r.h>q.y)violations.push(`text-overlap:${texts[a].id}/${texts[b].id}`);
+  for(const p of Array.from(document.querySelectorAll('svg path')).filter(visible)){
+   const path=p as SVGPathElement,matrix=path.getScreenCTM();if(!matrix)continue;const length=path.getTotalLength();
+   for(let i=0;i<=100;i++){const q=path.getPointAtLength(length*i/100);const z=new DOMPoint(q.x,q.y).matrixTransform(matrix);const x=z.x-stage.x,y=z.y-stage.y;for(const text of texts)for(const r of text.rects)if(x>r.x-3&&x<r.x+r.w+3&&y>r.y-3&&y<r.y+r.h+3)violations.push(`line-text:${text.id}`);}
+  }
+  console.log('FRAME_QA:'+JSON.stringify({frame,texts,violations:[...new Set(violations)],fontsReady:document.fonts.check('66px SeasideSans')&&document.fonts.check('76px SeasideSerif')}));
+ },[audit,frame]);
+ return <AbsoluteFill data-qa-stage style={{background:C.paper,fontFamily:SANS,color:C.ink,overflow:'hidden'}}>
+  {/* Static material only. Nothing breathes, drifts, or uses a real-time clock. */}
+  <AbsoluteFill style={{background:'radial-gradient(ellipse at 23% 42%,rgba(255,255,255,.5),transparent 68%)'}}/>
+  <div style={{position:'absolute',inset:0,transformOrigin:'1280px 720px',transform:`translateY(${cam.y}px) scale(${cam.scale})`}}>
+   <div data-qa="photo" style={{position:'absolute',left:photo.x,top:photo.y+mix(24,0,photoIn),width:photo.w,height:photo.h,opacity:photoIn,padding:12,boxSizing:'border-box',background:C.matte,boxShadow:'0 20px 50px rgba(36,52,48,.09),0 1px 3px rgba(36,52,48,.12)'}}>
+    <CanvasImage src={staticFile('assets/seaside.png')} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
+   </div>
+   <div style={{opacity:photoIn*(1-progress(t,18.4,18.8))}}>
+    <div style={{position:'absolute',left:205,top:1040,width:72,height:2,background:C.hair}}/>
+    <Text id="photo-label-intro" x={299} y={1010} width={600} size={43} color={C.muted}>海边照片</Text>
+   </div>
+   <Text id="intro" x={1305} y={450} width={1050} size={94} serif opacity={show(t,.7,3.7)} lineHeight={1.65}>比如你看到她发的{'\n'}<span style={{color:C.teal}}>海边照片。</span></Text>
+
+   <div style={{opacity:quoteFade}}>
+    <Text id="you-can-say" x={1320} y={231} width={1000} size={48} color={C.muted} opacity={progress(t,4.2,4.5)}>你可以说：</Text>
+    <Text id="quote-1" x={1305} y={350} width={1085} size={66} opacity={progress(t,4.9,5.25)} lineHeight={1.65}>“你那几张海边照片{'\n'}拍得挺好看的，</Text>
+    <Text id="quote-2" x={1305} y={620} width={1085} size={66} opacity={progress(t,8.7,9.05)} lineHeight={1.65}>我之前也想去海边待几天。</Text>
+    <Text id="quote-3" x={1305} y={802} width={1085} size={66} opacity={progress(t,11.9,12.25)} lineHeight={1.65}>你是比较喜欢<span style={{color:C.teal}}>大海</span>，{'\n'}还是单纯喜欢<span style={{color:C.rust}}>拍照</span>？”</Text>
+   </div>
+
+   <svg width={2560} height={1440} viewBox="0 0 2560 1440" style={{position:'absolute',inset:0}} aria-hidden>
+    <g opacity={upperOpacity}>
+     <Stroke curve={UPPER} p={upper} color={C.rust}/>
+     {upper>0&&<circle cx={870} cy={705} r={6} fill={C.paper} stroke={C.rust} strokeWidth={3}/>}
+     {upper>.99&&<circle cx={1290} cy={480} r={7} fill={C.paper} stroke={C.rust} strokeWidth={3}/>}
+     {upperEnd>0&&<path d={`M1290 480 L${mix(1290,2070,upperEnd)} 480`} stroke={C.rust} strokeWidth={4} fill="none" strokeLinecap="round"/>}
+     {upperEnd>.99&&<circle cx={2070} cy={480} r={7} fill={C.rust}/>}
+    </g>
+    <Stroke curve={LOWER} p={lower} color={C.teal}/>
+    {lower>.99&&<circle cx={1290} cy={870} r={7} fill={C.paper} stroke={C.teal} strokeWidth={3}/>}
+    <Stroke curve={TRAVEL} p={travel} color={C.teal}/>
+    <Stroke curve={VIEW} p={view} color={C.teal}/>
+    <Stroke curve={WHY} p={why} color={C.teal}/>
+    {travel>.99&&<circle cx={1850} cy={740} r={5} fill={C.teal}/>}
+    {view>.99&&<circle cx={1850} cy={900} r={5} fill={C.teal}/>}
+    {why>.99&&<circle cx={1850} cy={1060} r={5} fill={C.teal}/>}
+   </svg>
+   <Text id="source-label" x={256} y={963} width={614} size={44} color={C.muted} opacity={progress(t,20.3,20.65)}>海边照片</Text>
+   <div style={{opacity:upperOpacity}}>
+    <Text id="photo-preference" x={1210} y={358} width={500} size={68} color={C.rust} opacity={progress(t,21.6,21.95)}>喜欢拍照</Text>
+    <Text id="photography" x={1950} y={305} width={350} size={108} serif color={C.rust} opacity={progress(t,23.0,23.4)}>摄影</Text>
+   </div>
+   <Text id="sea-preference" x={1210} y={715} width={500} size={68} color={C.teal} opacity={progress(t,28.55,28.9)}>喜欢大海</Text>
+   <Text id="travel" x={1920} y={670} width={430} size={88} serif color={C.teal} opacity={progress(t,30.0,30.35)}>旅行</Text>
+   <Text id="view" x={1920} y={830} width={430} size={88} serif color={C.teal} opacity={progress(t,31.75,32.1)}>风景</Text>
+   <Text id="why" x={1920} y={975} width={490} size={46} color={C.teal} lineHeight={1.4} opacity={progress(t,34.0,34.35)}>她为什么喜欢{'\n'}那种环境</Text>
+  </div>
+
+  <Text id="caption-photo" x={205} y={1180} width={2150} size={66} opacity={show(t,20.6,27)} align="center">{SCRIPT[3]}</Text>
+  <Text id="caption-sea" x={205} y={1118} width={2150} size={60} opacity={show(t,27.6,37.6)} align="center" lineHeight={1.45}>如果她说喜欢大海，那你就可以聊旅行、风景，{'\n'}甚至她为什么喜欢那种环境。</Text>
+  <Text id="notice" x={400} y={145} width={1760} size={64} opacity={show(t,38.6,40.8)} align="center">{SCRIPT[5]}</Text>
+  <Text id="conclusion" x={280} y={1050} width={2000} size={76} serif opacity={progress(t,41.1,41.55)} align="center" lineHeight={1.4}>同样是一张照片，{'\n'}你们聊出来的东西可能<span style={{color:C.teal}}>完全不一样。</span></Text>
+ </AbsoluteFill>;
+};
+export const Seaside=Interactive.create({Component:SeasideInner,layout:'absolute-fill'});
