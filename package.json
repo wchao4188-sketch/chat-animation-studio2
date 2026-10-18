@@ -1,14 +1,18 @@
 {
   "name": "chat-animation-studio2",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Independent deterministic seaside conversation film — storyboard B, v0.2-RC1",
   "scripts": {
+    "render:upgrade": "tsx scripts/render-video.ts SeasideUpgrade output/v0.2",
     "studio": "remotion studio src/index.ts --browser-executable=/usr/bin/chromium",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test scripts/quality.test.ts",
-    "render": "tsx scripts/render-video.ts",
-    "frames": "tsx scripts/render-frames.ts"
+    "test": "tsx --test scripts/quality.test.ts scripts/upgrade.test.ts",
+    "frames:upgrade": "tsx scripts/upgrade-frames.ts",
+    "render": "tsx scripts/render-video.ts SeasideUpgrade output/v0.2",
+    "render:classic": "tsx scripts/render-video.ts",
+    "frames": "tsx scripts/upgrade-frames.ts",
+    "frames:classic": "tsx scripts/render-frames.ts"
   },
   "dependencies": {
     "@remotion/cli": "4.0.536",
