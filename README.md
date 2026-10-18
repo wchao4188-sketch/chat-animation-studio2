@@ -46,4 +46,11 @@ npm run render
 
 源工程包不包含 `node_modules`、缓存或认证信息，可由锁文件恢复依赖。成片和预览另附交付包。
 
-当前执行环境无附件上传接口；GitHub API读取请求被代理拒绝，尚未尝试发布。已保存api.github.com和uploads.github.com网络允许项的配置草稿，保存不等于应用或发布。只有网络生效、账号权限验证、上传与下载验证成功后，才能提供外部下载链接；不将工作区路径称为已发布附件。
+已有成片与工程包存放于本公开仓库的 `downloads/`，使用以下链接直接下载：
+
+- [MP4成片](https://github.com/wchao4188-sketch/chat-animation-studio2/raw/refs/heads/main/downloads/seaside-1440p.mp4)
+- [完整交付包：视频、可编辑工程、关键帧、字幕与质量记录](https://github.com/wchao4188-sketch/chat-animation-studio2/raw/refs/heads/main/downloads/chat-animation-studio2-delivery-v0.1.0.zip)
+- [仅可编辑源工程](https://github.com/wchao4188-sketch/chat-animation-studio2/raw/refs/heads/main/downloads/chat-animation-studio2-source-v0.1.0.zip)
+- [成片关键帧总览](https://github.com/wchao4188-sketch/chat-animation-studio2/raw/refs/heads/main/downloads/keyframes-contact.jpg)
+
+使用已有文件上传，没有重新渲染或重新生成压缩包。包内关于下载受阻的说明记录的是打包时状态；当前交付状态以本页为准。Release附件上传接口拒绝了当前集成凭据，因此使用仓库文件直下载，不宣称它们是Release附件。
