@@ -1,0 +1,21 @@
+{
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "video_frames": 300,
+  "duration": "10.005000",
+  "bytes": 2901546,
+  "sha256": "17b7b79df5cf03ce13552d15cbb7361d66c893620fe7c9f9e6db84224f3ed5c0",
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "full_decode_exit_code": 0,
+  "all_frames_decoded": 300,
+  "visual_review_samples": 61,
+  "music_waveform_correlation": 0.9999610914183357,
+  "music_lag_ms": 0.0,
+  "prior_artifacts_unchanged": true,
+  "added_narration": false,
+  "human_audio_listening": false
+}

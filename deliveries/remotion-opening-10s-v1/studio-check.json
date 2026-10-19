@@ -1,0 +1,6 @@
+{
+  "status": 200,
+  "title": "NewWorldOpening / remotion-preview - Remotion Studio",
+  "text": "File\nView\nComposition\nTools\nHelp\nremotion-preview\nCompositions\nAssets\nSearch...\nCtrl+K\nNewWorldOpening\nNewWorldOpening\n新世界 / 会聊天的人\nOPENING STUDY · 01\n从第一句话，开始认识一个人\n为什么会聊天的人\n大多数的开场\n不是询问信息？\n第一句话\n假如现在有两个男生，同时认识了一个女生，\n假如你是女生又会怎么选？\nInspector\nJobs\nNewWorldOpening\nRoot.tsx:4\nOpening.tsx:50\nMetadata\nDimensions\n2560\n1440\nFrame rate\n30fps\nDuration\n00:10.00\nActions\nAdd Solid\nAdd text\nAdd asset...\nAdd composition...\nGenerate with agent...\nBrowse Elements\nFit\n1x\nRender\n<AbsoluteFill>\nUploaded soundtrack — no added voice\nmusic-opening.wav\n00:00.00\n0",
+  "svgs": 56
+}
