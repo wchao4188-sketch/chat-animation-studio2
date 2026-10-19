@@ -1,0 +1,50 @@
+{
+  "repository": "wchao4188-sketch/chat-animation-studio2",
+  "commit": "d3cf95133778cd4e96a87780c3809d00a8e3c5dc",
+  "anonymous_full_downloads": [
+    {
+      "name": "NewWorld-Knowledge-2K30.mp4",
+      "url": "https://github.com/wchao4188-sketch/chat-animation-studio2/raw/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-2K30.mp4",
+      "resolved_url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-2K30.mp4",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "bytes": 14165340,
+      "sha256": "af60252c7c524a68a70843fcc432ee9c8f1cca38373c54e874e72424d27e6d89",
+      "remote_git_blob_bytes": 14165340,
+      "matches_original": true
+    },
+    {
+      "name": "NewWorld-Knowledge-Source.zip",
+      "url": "https://github.com/wchao4188-sketch/chat-animation-studio2/raw/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-Source.zip",
+      "resolved_url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-Source.zip",
+      "http_status": 200,
+      "content_type": "application/zip",
+      "bytes": 24905776,
+      "sha256": "1f0a9970159f46bfe3cde35853752e32bff79e7586afc8041dbd79fc6f02a72b",
+      "remote_git_blob_bytes": 24905776,
+      "matches_original": true
+    },
+    {
+      "name": "NewWorld-Knowledge-Keyframes.pdf",
+      "url": "https://github.com/wchao4188-sketch/chat-animation-studio2/raw/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-Keyframes.pdf",
+      "resolved_url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/NewWorld-Knowledge-Keyframes.pdf",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "bytes": 5492828,
+      "sha256": "c8f2d20f7fe8cbc119cc04ca6d93c60ab438fb621e4c47829f4597ca25ab24d5",
+      "remote_git_blob_bytes": 5492828,
+      "matches_original": true
+    },
+    {
+      "name": "验收记录.md",
+      "url": "https://github.com/wchao4188-sketch/chat-animation-studio2/raw/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/%E9%AA%8C%E6%94%B6%E8%AE%B0%E5%BD%95.md",
+      "resolved_url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/d3cf95133778cd4e96a87780c3809d00a8e3c5dc/deliveries/new-world-knowledge-2k30-20261019/%E9%AA%8C%E6%94%B6%E8%AE%B0%E5%BD%95.md",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 3175,
+      "sha256": "9a9e5b57719fb4cdc3fac87c74ac24954b3825f250b1c0b040ea7957ba596fd4",
+      "remote_git_blob_bytes": 3175,
+      "matches_original": true
+    }
+  ]
+}
