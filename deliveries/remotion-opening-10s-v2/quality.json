@@ -1,0 +1,34 @@
+{
+  "geometry_browser_measurements": {
+    "frames_checked": 300,
+    "max_port_error_px": 0.021859811721213,
+    "max_tip_error_px": 0.01274274475043527
+  },
+  "v1_files_unchanged": true,
+  "final_hold_decoded_max_mean_difference": 0.09907986111111111,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "video_frames": 300,
+  "duration": "10.005000",
+  "bytes": 3219005,
+  "sha256": "99dd7101e8b3cce911e61260d090b9995321c4aff363adb23527a0b7df347d2f",
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "full_decode_exit_code": 0,
+  "all_frames_decoded": 300,
+  "visual_review_samples": 61,
+  "music_waveform_correlation": 0.9999610914183357,
+  "music_lag_ms": 0.0,
+  "prior_artifacts_unchanged": true,
+  "added_narration": false,
+  "human_audio_listening": false,
+  "repeat_frame_160_pixels_identical": true,
+  "final_hold_249_299_source_pixels_identical": true,
+  "visual_review_completed": true,
+  "repaired_issue": "Delayed top caption reveal to 5.200\u20135.650s to avoid overlap during center-phone retreat; rerendered full 300 frames.",
+  "audio_integrated_lufs": -17.9,
+  "audio_true_peak_dbfs": -6.6
+}
