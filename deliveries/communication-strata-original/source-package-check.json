@@ -1,0 +1,14 @@
+{
+  "source_zip_sha256": "79286685d8c020f9d1fc0bdb1ac84c88bf0bd644f5d481a669d618f6e6196ec2",
+  "extracted_entries": 69,
+  "typecheck_exit_code": 0,
+  "rendered_from_extracted_source": true,
+  "rendered_frame": 2310,
+  "png_size": [
+    1920,
+    1080
+  ],
+  "png_sha256": "e77b15f4bd13db006e37c196987090f8f7bef8e7e7ef5e8bfd3c2d0a3eaf8870",
+  "dependency_note": "Reused existing pinned node_modules for extraction smoke test; a fresh npm ci installation and Windows rendering were not performed.",
+  "initial_smoke_command_note": "Initial npm command used /tmp as cwd and failed with ENOENT; reran from the actual extracted project root, where typecheck and render succeeded."
+}
