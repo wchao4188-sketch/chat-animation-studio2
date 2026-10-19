@@ -1,0 +1,14 @@
+{
+  "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/3b312877f5048927c9ac36272df290256435e966/deliveries/communication-strata-original/NewWorld-Communication-Strata.mp4",
+  "http_status": 200,
+  "anonymous": true,
+  "bytes": 17803522,
+  "sha256": "879c171f7150b7886df546bb97994d9c2d1dd334aaa636670f271de894b402cf",
+  "matches_original": true,
+  "remote_download_ffprobe": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "duration": "126.933333"
+  }
+}
