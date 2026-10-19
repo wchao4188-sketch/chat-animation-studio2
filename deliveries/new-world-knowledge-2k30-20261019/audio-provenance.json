@@ -1,0 +1,202 @@
+{
+  "music_sha256": "9afc2fcf48ef5cb03afe19b3d5da0db1ce080ad44fbcf19d140b4272eb248e83",
+  "source_narration": "Original voice files; line 04 is a same-word Melo reread to address ambiguous short-phrase recognition; no new spoken words",
+  "text_order_matches_original": true,
+  "tempo_changes": [
+    {
+      "id": 0,
+      "speed": 1.3
+    },
+    {
+      "id": 1,
+      "speed": 1.55
+    },
+    {
+      "id": 2,
+      "speed": 1.55
+    },
+    {
+      "id": 3,
+      "speed": 1.55
+    },
+    {
+      "id": 4,
+      "speed": 1.55
+    },
+    {
+      "id": 5,
+      "speed": 1.55
+    },
+    {
+      "id": 6,
+      "speed": 1.55
+    },
+    {
+      "id": 7,
+      "speed": 1.55
+    },
+    {
+      "id": 8,
+      "speed": 1.55
+    },
+    {
+      "id": 9,
+      "speed": 1.55
+    },
+    {
+      "id": 10,
+      "speed": 1.55
+    },
+    {
+      "id": 11,
+      "speed": 1.55
+    },
+    {
+      "id": 12,
+      "speed": 1.3
+    },
+    {
+      "id": 13,
+      "speed": 1.55
+    },
+    {
+      "id": 14,
+      "speed": 1.55
+    },
+    {
+      "id": 15,
+      "speed": 1.55
+    },
+    {
+      "id": 16,
+      "speed": 1.55
+    },
+    {
+      "id": 17,
+      "speed": 1.55
+    },
+    {
+      "id": 18,
+      "speed": 1.55
+    },
+    {
+      "id": 19,
+      "speed": 1.55
+    },
+    {
+      "id": 20,
+      "speed": 1.55
+    },
+    {
+      "id": 21,
+      "speed": 1.55
+    },
+    {
+      "id": 22,
+      "speed": 1.55
+    },
+    {
+      "id": 23,
+      "speed": 1.55
+    },
+    {
+      "id": 24,
+      "speed": 1.3
+    },
+    {
+      "id": 25,
+      "speed": 1.55
+    },
+    {
+      "id": 26,
+      "speed": 1.55
+    },
+    {
+      "id": 27,
+      "speed": 1.35
+    },
+    {
+      "id": 28,
+      "speed": 1.55
+    },
+    {
+      "id": 29,
+      "speed": 1.55
+    },
+    {
+      "id": 30,
+      "speed": 1.55
+    },
+    {
+      "id": 31,
+      "speed": 1.55
+    },
+    {
+      "id": 32,
+      "speed": 1.55
+    },
+    {
+      "id": 33,
+      "speed": 1.55
+    },
+    {
+      "id": 34,
+      "speed": 1.3
+    },
+    {
+      "id": 35,
+      "speed": 1.3
+    },
+    {
+      "id": 36,
+      "speed": 1.55
+    },
+    {
+      "id": 37,
+      "speed": 1.55
+    },
+    {
+      "id": 38,
+      "speed": 1.55
+    },
+    {
+      "id": 39,
+      "speed": 1.55
+    },
+    {
+      "id": 40,
+      "speed": 1.55
+    },
+    {
+      "id": 41,
+      "speed": 1.55
+    },
+    {
+      "id": 42,
+      "speed": 1.3
+    },
+    {
+      "id": 43,
+      "speed": 1.55
+    },
+    {
+      "id": 44,
+      "speed": 1.55
+    },
+    {
+      "id": 45,
+      "speed": 1.55
+    },
+    {
+      "id": 46,
+      "speed": 1.55
+    },
+    {
+      "id": 47,
+      "speed": 1.55
+    }
+  ],
+  "music_effect": "continuous source audio from 0s, smooth ducking, boundary dip, final fade",
+  "sfx": "locally synthesized, sparse message/connection/reveal accents",
+  "human_audio_listening": false
+}

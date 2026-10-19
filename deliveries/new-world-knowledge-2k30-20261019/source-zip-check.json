@@ -1,0 +1,13 @@
+{
+  "source_zip_bytes": 24905776,
+  "source_zip_sha256": "1f0a9970159f46bfe3cde35853752e32bff79e7586afc8041dbd79fc6f02a72b",
+  "zip_crc_test": "passed",
+  "extracted_typecheck_exit_code": 0,
+  "extracted_frame_render_exit_code": 0,
+  "frame": 650,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "independent_node_modules": true
+}

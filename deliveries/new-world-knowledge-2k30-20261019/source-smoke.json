@@ -1,0 +1,13 @@
+{
+  "npm_ci_exit_code": 0,
+  "lockfile_versions_unchanged": true,
+  "typecheck_exit_code": 0,
+  "native_frame_render_exit_code": 0,
+  "rendered_frame": 1180,
+  "rendered_size": [
+    2560,
+    1440
+  ],
+  "fresh_node_modules": true,
+  "uses_original_node_modules_symlink": false
+}

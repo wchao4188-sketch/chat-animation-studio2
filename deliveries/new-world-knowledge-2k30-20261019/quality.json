@@ -1,0 +1,31 @@
+{
+  "title": "新世界｜从答案到线索",
+  "duration_seconds": 140.86666666666667,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "aspect_ratio": "16:9",
+  "fps": 30,
+  "frames": 4226,
+  "bytes": 14165340,
+  "sha256": "af60252c7c524a68a70843fcc432ee9c8f1cca38373c54e874e72424d27e6d89",
+  "strict_decode_exit_code": 0,
+  "decoded_frames": 4226,
+  "overview_samples": 477,
+  "overview_pages": 30,
+  "minimum_frame_mean_luma": 26.437649176954732,
+  "maximum_frame_mean_luma": 39.28013631687243,
+  "maximum_frame_mean_change": 6.444405864197531,
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "audio_master_correlation": 1.0,
+  "narration_overlap": false,
+  "original_48_paragraphs_and_order_preserved": true,
+  "font_chinese_glyph_coverage": true,
+  "music": "User uploaded mmexport1792300994359.mp3, same audio, first 140.8667 seconds",
+  "narration": "Original takes with pitch-preserving variable tempo; line 04 reread with the same words and same duration",
+  "human_audio_listening": false,
+  "old_artifacts_sha256_unchanged": true,
+  "full_render_connector_assertion_limit_pixels": 0.2
+}
