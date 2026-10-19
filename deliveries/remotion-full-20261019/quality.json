@@ -1,0 +1,44 @@
+{
+  "bytes": 17140975,
+  "sha256": "39af05eb212b66e17c6df74acaddda370a5395b859a710d1fa89a3c79bf2d97d",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "fps": 30,
+  "video_frames": 6600,
+  "video_duration_seconds": 220,
+  "container_duration": "220.000000",
+  "all_frames_decoded": 6600,
+  "strict_decode_exit_code": 0,
+  "script_paragraphs": 48,
+  "script_exact_match": true,
+  "visual_review_samples": 377,
+  "overview_pages": 32,
+  "soundtrack_correlation": 1.0,
+  "v1_v2_prior_artifacts_unchanged": true,
+  "narration": "existing narration.wav, unchanged content and timing",
+  "music": "user music, 4s crossfade loop; normalized under narration",
+  "human_audio_listening": false,
+  "final_question_hold_seconds": 10.65,
+  "visual_review_completed": true,
+  "repairs": [
+    {
+      "frames": [
+        2646,
+        2715
+      ],
+      "change": "Delay annotation until photo settles"
+    },
+    {
+      "frames": [
+        4306,
+        4370
+      ],
+      "change": "Reveal boundary text after phone retreat"
+    }
+  ],
+  "audio_integrated_lufs": -17.2,
+  "audio_true_peak_dbfs": -2.8,
+  "unmodified_overview_max_pixel_mean_difference": 0.3340267761752137
+}
