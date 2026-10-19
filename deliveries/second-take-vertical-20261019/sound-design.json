@@ -1,0 +1,92 @@
+{
+  "duration": 46,
+  "music_source": "user supplied recording / first 46 seconds",
+  "music_gain_rms_target": 0.045,
+  "voice_music_duck_gain": 0.24,
+  "foley_events": [
+    {
+      "time": 4.28,
+      "frame": 128,
+      "sound": "陶瓷杯落在木托盘"
+    },
+    {
+      "time": 4.35,
+      "frame": 130,
+      "sound": "陶瓷杯落在木托盘"
+    },
+    {
+      "time": 11.25,
+      "frame": 338,
+      "sound": "手指触碰折皱纸稿"
+    },
+    {
+      "time": 12.833333,
+      "frame": 385,
+      "sound": "手指触碰折皱纸稿"
+    },
+    {
+      "time": 27.833333,
+      "frame": 835,
+      "sound": "椅脚在地面短距离挪动"
+    }
+  ],
+  "event_music_alignment": [
+    {
+      "event": "拒绝回应/音乐下沉",
+      "event_frame": 81,
+      "nearest_music_accent_frame": 81,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "放下两杯咖啡",
+      "event_frame": 129,
+      "nearest_music_accent_frame": 129,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "转向桌面",
+      "event_frame": 320,
+      "nearest_music_accent_frame": 320,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "纸稿触碰音效",
+      "event_frame": 385,
+      "nearest_music_accent_frame": 385,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "提出重来",
+      "event_frame": 767,
+      "nearest_music_accent_frame": 767,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "椅脚音效",
+      "event_frame": 835,
+      "nearest_music_accent_frame": 831,
+      "difference_frames": 4,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "重新抬头",
+      "event_frame": 911,
+      "nearest_music_accent_frame": 911,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    },
+    {
+      "event": "重新开口",
+      "event_frame": 1166,
+      "nearest_music_accent_frame": 1166,
+      "difference_frames": 0,
+      "speech_timing_preserved": true
+    }
+  ],
+  "music_source_not_regenerated": true
+}

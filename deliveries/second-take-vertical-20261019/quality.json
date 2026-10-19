@@ -1,0 +1,42 @@
+{
+  "title": "第二遍",
+  "duration_seconds": 46,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "frames": 1380,
+  "bytes": 11921366,
+  "sha256": "d2bcdaf4fc9573bd9e4a8fec5e03e12c7c614c5f9eee76f2067543eca1f2ca1c",
+  "strict_decode_exit_code": 0,
+  "decoded_frames": 1380,
+  "overview_samples": 146,
+  "overview_pages": 13,
+  "minimum_frame_mean_luma": 99.01876800411523,
+  "audio_codec": "aac",
+  "audio_sample_rate": "48000",
+  "audio_master_correlation": 1.0,
+  "dialogue_overlap": false,
+  "font_chinese_glyph_coverage": true,
+  "music": "User uploaded mmexport1792300994359.mp3, original audio first 46 seconds",
+  "narration": false,
+  "human_audio_listening": false,
+  "source_asr_file": "voice-asr.json",
+  "visual_review_completed": true,
+  "visual_review_method": "146 actual decoded frames / 13 overview pages plus native-size rendered close-ups",
+  "audio_integrated_lufs": -18.1,
+  "audio_true_peak_dbfs": -2.9,
+  "prior_new_world_artifacts_unchanged": true,
+  "added_dependencies": [],
+  "browser_full_playback": {
+    "width": 1080,
+    "height": 1920,
+    "duration": 46,
+    "currentTime": 46,
+    "readyState": 4,
+    "decodedFrames": 1380,
+    "error": null
+  }
+}
