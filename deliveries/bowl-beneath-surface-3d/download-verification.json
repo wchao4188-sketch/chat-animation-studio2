@@ -1,0 +1,34 @@
+[
+  {
+    "name": "NewWorld-Beneath-The-Bowl-10s.mp4",
+    "bytes": 7442476,
+    "sha256": "80bea8e8cd30bf67c255627ae7313efa2ae2bd76fb6d33ce3458fea7ceec6e00",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/a85e622007d9022f7a2efe42a79358d6702580e3/deliveries/bowl-beneath-surface-3d/NewWorld-Beneath-The-Bowl-10s.mp4",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "NewWorld-Beneath-The-Bowl-Source.zip",
+    "bytes": 18640837,
+    "sha256": "2d9f3456af19ebefdc6de398307dfa96e33bbcc7d05bb421487047a3dd64914b",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/a85e622007d9022f7a2efe42a79358d6702580e3/deliveries/bowl-beneath-surface-3d/NewWorld-Beneath-The-Bowl-Source.zip",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "Beneath-The-Bowl-Keyframes.pdf",
+    "bytes": 2003669,
+    "sha256": "c78b593e2b1c77855bd46ae9b80d071c429de9d3741f008ed5e6766530e53f40",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/a85e622007d9022f7a2efe42a79358d6702580e3/deliveries/bowl-beneath-surface-3d/Beneath-The-Bowl-Keyframes.pdf",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "Acceptance.md",
+    "bytes": 3528,
+    "sha256": "638266b0abe5753b160691b14705ced5066d5d44fadd353cd1f1e80596566963",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/a85e622007d9022f7a2efe42a79358d6702580e3/deliveries/bowl-beneath-surface-3d/Acceptance.md",
+    "http_status": 200,
+    "anonymous_full_get": true
+  }
+]
