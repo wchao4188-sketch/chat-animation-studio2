@@ -1,0 +1,8 @@
+{
+  "zip_crc": true,
+  "extracted_project_typecheck_exit": 0,
+  "extracted_project_still_frame": 135,
+  "still_bytes": 1536784,
+  "still_sha256": "77099473c25b4d7f53ff741b97595f569c1008f58a5214c0a0667514d16d64ca",
+  "note": "Uses supplied 3D base layer and the pinned existing node_modules; this does not assert a new npm ci installation or full Blender rebuild on another OS."
+}
