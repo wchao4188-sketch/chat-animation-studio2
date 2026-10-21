@@ -1,0 +1,34 @@
+[
+  {
+    "name": "NewWorld-Age-Is-Not-A-Person.mp4",
+    "bytes": 31387848,
+    "sha256": "ebd7e6394f61e113efa07c7046a015ab3309031add29dfced8fe96627e1a76e2",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/9700a1b38244f625cfa6ff5523241e1f9635ce1c/deliveries/age-is-not-a-person/NewWorld-Age-Is-Not-A-Person.mp4",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "NewWorld-Age-Is-Not-A-Person-Source.zip",
+    "bytes": 40428687,
+    "sha256": "bfe4c7dd17c3627ae6e2590d6e86377acb136dccde59b6f9d74b1fbdb127934e",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/9700a1b38244f625cfa6ff5523241e1f9635ce1c/deliveries/age-is-not-a-person/NewWorld-Age-Is-Not-A-Person-Source.zip",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "Age-Is-Not-A-Person-Keyframes.pdf",
+    "bytes": 902796,
+    "sha256": "83200e30899c3be364b30828cc3d5dbab293d67344ef5b6d1b10b941d71802ed",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/9700a1b38244f625cfa6ff5523241e1f9635ce1c/deliveries/age-is-not-a-person/Age-Is-Not-A-Person-Keyframes.pdf",
+    "http_status": 200,
+    "anonymous_full_get": true
+  },
+  {
+    "name": "Acceptance.md",
+    "bytes": 2699,
+    "sha256": "a60991238a1f06fb828ce261cb1c2148dfba88c8a72c34def0727b9ec11d9b1a",
+    "url": "https://raw.githubusercontent.com/wchao4188-sketch/chat-animation-studio2/9700a1b38244f625cfa6ff5523241e1f9635ce1c/deliveries/age-is-not-a-person/Acceptance.md",
+    "http_status": 200,
+    "anonymous_full_get": true
+  }
+]
