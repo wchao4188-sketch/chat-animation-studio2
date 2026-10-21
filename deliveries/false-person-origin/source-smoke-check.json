@@ -1,0 +1,9 @@
+{
+  "archive": "NewWorld-Origin-Of-The-False-Person-Source.zip",
+  "zip_crc": "passed",
+  "typecheck": "passed",
+  "render_frame": 1875,
+  "matches_original_hash": true,
+  "sha256": "b61b5814547c3f0a2bd1fd2200e772bf3008c9c9fe4a0f61d7307097619b31e6",
+  "dependencies": "reused pinned node_modules; not a fresh npm ci"
+}
