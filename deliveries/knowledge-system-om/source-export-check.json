@@ -1,0 +1,8 @@
+{
+  "archive_crc": "passed",
+  "extracted_adapter_probe": "passed",
+  "source_render_frame": 105,
+  "png_sha256_matches_original": "1e44cfd12aeb9ba811ee0efcb2c71b6c5480a38dfe33b9429a36ed263a5c31f1",
+  "dependencies": "same installed OpenMontage/Node modules; not a fresh installation",
+  "configuration": "project path changed to extracted directory; dependency path retained"
+}

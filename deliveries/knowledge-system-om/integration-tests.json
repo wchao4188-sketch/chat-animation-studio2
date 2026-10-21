@@ -1,0 +1,8 @@
+{
+  "tests": 15,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "fault_injection_is_synthetic": true,
+  "real_fallback_ffprobe_and_real_render_cache": true
+}

@@ -1,0 +1,51 @@
+{
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": "300",
+    "duration": "10.000000",
+    "container_duration": "10.000000"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "peak": 0.49677884578704834,
+    "master_correlation": 0.9999013799087109,
+    "human_listening": false
+  },
+  "full_decode": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "all_frames": {
+    "count": 300,
+    "minimum_brightness": 30.274658564814814,
+    "maximum_adjacent_difference": 1.4925925925925927,
+    "maximum_difference_frame": 116,
+    "splice_boundary_difference": 0.06535879629629629
+  },
+  "video_packet_copy": {
+    "identical": true,
+    "sha256": "SHA256=04b4e36e0293d246f841653d50b88c0bfcfaf64ea82f7c272ce8641f681d6cd8"
+  },
+  "content_guard": {
+    "checked": "AST-extracted visible copy",
+    "matches": []
+  },
+  "source": {
+    "pdf_pages": 7,
+    "used_pages": [
+      6,
+      7
+    ],
+    "evidence_type": "author opinion and illustrative example; not a scientific study"
+  },
+  "voiceover_added": false,
+  "old_deliverables_hashes_unchanged": true,
+  "file": {
+    "bytes": 2127016,
+    "sha256": "8df21ed1c850c90d66a2e265af6b8ca5eca74d011946141b1cdbb6a1699bc0a7"
+  }
+}
