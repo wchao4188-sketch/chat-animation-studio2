@@ -1,0 +1,8 @@
+{
+  "zip_crc": "passed",
+  "extracted_source_typecheck": "passed",
+  "render_frame": 570,
+  "png_matches_original": true,
+  "sha256": "feaf26cc71ef867f18dcdf987266fb6700645e9949ae72f203e5805042ac7991",
+  "dependency_install": "reused pinned node_modules; not a fresh npm ci"
+}
