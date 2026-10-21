@@ -1,0 +1,8 @@
+{
+  "zip_crc": true,
+  "extracted_project_typecheck_exit": 0,
+  "extracted_project_rendered_frame": 1980,
+  "frame_sha256": "aa17e649f9644b876c8149f2fec21625fb0c40cb51a303c0d438daf8b4a31682",
+  "matches_authoring_render": true,
+  "note": "Uses pinned existing node_modules. Does not claim fresh npm installation or another operating system was tested."
+}
