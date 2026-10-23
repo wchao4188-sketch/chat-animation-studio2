@@ -1,0 +1,18 @@
+{
+  "NewWorld-E02-Repair-96s.mp4": {
+    "bytes": 7559827,
+    "sha256": "68cbfc0d4f223d0e3bfa90401ee8086b96475ee9b4f6b719c6195e8160b6bbf4"
+  },
+  "NewWorld-E02-Editable-Source.zip": {
+    "bytes": 21122084,
+    "sha256": "b4b8295e2edf83a9ad14b66728a8c7ee1c7e169a1e5d01172050bd17e42850d2"
+  },
+  "Checks.md": {
+    "bytes": 3040,
+    "sha256": "dc3be44fc718c514cde1e671a01cf62e0e81cf29c16136f02dad722387756a2d"
+  },
+  "Keyframes.pdf": {
+    "bytes": 930991,
+    "sha256": "c96be97138ac4f66b8a0467b4f161c6ad7154be7f7f4f81eb605442476ebd2b7"
+  }
+}
